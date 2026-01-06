@@ -44,9 +44,16 @@ body {
   margin-bottom: 12px;
 }
 
+.login-section__logo a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .login-section__logo img {
   height: 132px;
   width: auto;
+  display: block;
 }
 
 .login-form {
