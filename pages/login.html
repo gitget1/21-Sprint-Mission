@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인</title>
+  <link rel="stylesheet" href="../Css/login.css">
+</head>
+<body>
+  <section class="login-section">
+    <div class="login-section__logo">
+      <img src="../images/logo.png" alt="판다마켓 로고">
+    </div>
+    
+    <form class="login-form">
+      <div class="login-form__field">
+        <label class="login-form__label">이메일</label>
+        <input type="email" class="login-form__input" placeholder="이메일을 입력하세요.">
+      </div>
+      
+      <div class="login-form__field">
+        <label class="login-form__label">비밀번호</label>
+        <div class="login-form__password-wrapper">
+          <input type="password" class="login-form__input login-form__input--password" placeholder="비밀번호를 입력하세요.">
+          <button type="button" class="login-form__toggle-password" aria-label="비밀번호 보기/숨기기">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 3C5 3 1.73 7.11 1 10C1.73 12.89 5 17 10 17C15 17 18.27 12.89 19 10C18.27 7.11 15 3 10 3ZM10 15C7.24 15 5 12.76 5 10C5 7.24 7.24 5 10 5C12.76 5 15 7.24 15 10C15 12.76 12.76 15 10 15ZM10 7C8.34 7 7 8.34 7 10C7 11.66 8.34 13 10 13C11.66 13 13 11.66 13 10C13 8.34 11.66 7 10 7Z" fill="#9CA3AF"/>
+              <line x1="2" y1="2" x2="18" y2="18" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <button type="submit" class="login-form__submit">로그인</button>
+    </form>
+    
+    <div class="social-login">
+      <p class="social-login__text">간편 로그인하기</p>
+      <div class="social-login__buttons">
+        <a href="https://www.google.com" class="social-login__button" target="_blank"><img src="../images/google.png" alt="Google 로그인" class="social-login__button-image"></a>
+       <a href="https://www.kakaocorp.com/page/" class="social-login__button" target="_blank"><img src="../images/kakao.png" alt="Kakao 로그인" class="social-login__button-image"></a>
+      </div>
+    </div>
+    
+    <div class="signup-link">
+      <p>판다마켓이 처음이신가요? <a href="signup.html" class="signup-link__anchor">회원가입</a></p>
+    </div>
+  </section>
+</body>
+</html>

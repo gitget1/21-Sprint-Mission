@@ -1,0 +1,355 @@
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* ============================================
+   Header Block
+   ============================================ */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+}
+
+.header__logo {
+  width: 200px;
+  height: 70px;
+  margin-left: 400px;
+}
+
+.header__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 48px;
+  padding: 12px 20px;
+  background-color: #3692FF;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  margin-right: 400px;
+}
+
+/* ============================================
+   Top Section Block
+   ============================================ */
+
+.Top-section {
+  width: 100%;
+  height: 540px;
+  background-color: #CFE5FF;
+  background-image: url('../images/Img_home_top.png');
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
+  background-size: 55%;
+}
+
+.Top-section__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 400px 0 0;
+}
+
+.Top-section__title {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Pretendard';
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.Top-section__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 56px;
+  padding: 16px 100px;
+  background-color: #3692FF;
+  color: #F9FAFB;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 40px;
+}
+
+/* ============================================
+   Features Section Block
+   ============================================ */
+
+.features-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 400px;
+  background-color: #FFFFFF;
+}
+
+.features-section__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 80px 0;
+  gap: 5%;
+}
+
+.features-section__image {
+  flex: 1;
+  max-width: 50%;
+  height: auto;
+}
+
+.features-section__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.features-section__content--right {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.features-section__content--left {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.features-section__label {
+  color: #3692FF;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.features-section__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.3;
+  margin: 0 0 16px 0;
+}
+
+.features-section__description {
+  font-size: 36px;
+  color: #000000;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ============================================
+   CTA Section Block
+   ============================================ */
+
+.cta-section {
+  width: 100%;
+  height: 540px;
+  background-color: #CFE5FF;
+  background-repeat: no-repeat;
+  background-position: 70% bottom;
+  background-size: 55%;
+}
+
+.cta-section--with-image {
+  background-image: url('../images/Img_home_bottom.png');
+}
+
+.cta-section__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 120px 400px 0 0;
+}
+
+.cta-section__text {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ============================================
+   Footer Block
+   ============================================ */
+
+.footer {
+  width: 100%;
+  height: 160px;
+  box-sizing: border-box;
+  padding: 32px 200px 100px 200px;
+  gap: 10px;
+  font-size: 24px;
+  background-color: #111827;
+  color: #9ca3af;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* footer__copyright는 footer에서 스타일을 상속받습니다 */
+
+.footer__menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__menu-link {
+  color: #9ca3af;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer__menu-link:hover {
+  color: #ffffff;
+}
+
+.footer__sns {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__sns-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__sns-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* ============================================
+   미디어 쿼리 (Media Queries)
+   ============================================ */
+
+/* 1920px 이상: 배경은 전체 너비, 내부 요소 위치 고정, 여백만 증가 */
+@media (min-width: 1920px) {
+  .hero-section,
+  .cta-section--with-image {
+    background-color: #CFE5FF;
+  }
+  
+  .hero-section__content,
+  .cta-section__content {
+    max-width: 1200px;
+    margin-left: 400px;
+    margin-right: auto;
+    padding-right: 0;
+  }
+  
+  .features-section {
+    max-width: 1200px;
+    margin-left: 400px;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* 1920px 미만: 좌우 400px 여백 최대한 유지, 화면 작아질수록 감소 */
+@media (max-width: 1919px) {
+  .header__logo {
+    margin-left: 400px;
+  }
+  
+  .header__button {
+    margin-right: 400px;
+  }
+  
+  /* 화면이 작아질수록 여백 감소 (두 요소 간 거리만 가까워짐) */
+  @media (max-width: 1728px) {
+    .header__logo {
+      margin-left: 300px;
+    }
+    
+    .header__button {
+      margin-right: 300px;
+    }
+  }
+  
+  @media (max-width: 1528px) {
+    .header__logo {
+      margin-left: 200px;
+    }
+    
+    .header__button {
+      margin-right: 200px;
+    }
+  }
+  
+  @media (max-width: 1328px) {
+    .header__logo {
+      margin-left: 150px;
+    }
+    
+    .header__button {
+      margin-right: 150px;
+    }
+  }
+  
+  @media (max-width: 1128px) {
+    .header__logo {
+      margin-left: 100px;
+    }
+    
+    .header__button {
+      margin-right: 100px;
+    }
+  }
+  
+  @media (max-width: 928px) {
+    .header__logo {
+      margin-left: 50px;
+    }
+    
+    .header__button {
+      margin-right: 50px;
+    }
+  }
+  
+  @media (max-width: 828px) {
+    .header__logo {
+      margin-left: 20px;
+    }
+    
+    .header__button {
+      margin-right: 20px;
+    }
+  }
+}
